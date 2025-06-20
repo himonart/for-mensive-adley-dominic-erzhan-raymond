@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  color: white;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.letter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.letter-container {
+  width: 85%;
+  max-width: 600px;
+  max-height: 60vh;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 18px;
+  border-radius: 15px;
+  overflow-y: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.letter {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  background-color: #3e2f26; /* coklat tua */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background-color: #5b4033;
+}
+
+.emoticon-btn {
+  margin-top: 16px;
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.emoticon-btn:hover {
+  transform: scale(1.2);
+}
+
+.flying {
+  position: absolute;
+  font-size: 26px;
+  animation: fly 2s ease-out forwards;
+}
+
+@keyframes fly {
+  0% { opacity: 1; transform: translateY(0) rotate(0deg); }
+  100% { opacity: 0; transform: translateY(-200px) rotate(720deg); }
+  }
