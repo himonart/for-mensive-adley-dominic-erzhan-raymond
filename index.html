@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Mensiversarry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="backsound" autoplay loop>
+    <source src="backsound.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="slide slide-1 active" id="slide1">
+    <img src="intro.jpg" class="intro-img">
+    <button class="next-btn" onclick="nextSlide()">Click Here!</button>
+  </div>
+
+  <div class="slide slide-2" id="slide2">
+    <div class="letter-wrapper">
+      <div class="letter-container">
+        <p id="love-letter" class="letter"></p>
+      </div>
+      <button onclick="spawnEmoticon()" class="emoticon-btn">❤️‍🔥</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
